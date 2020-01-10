@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    about
+    contacts
   </Layout>
 </template>
 
