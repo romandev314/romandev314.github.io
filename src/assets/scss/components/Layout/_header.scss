@@ -1,0 +1,62 @@
+.header {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 7;
+	width: 40%;
+	height: 70px;
+	justify-content: space-between;
+	background: #191919;
+}
+
+.header__logo-wrap {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 200px;
+	height: 100%;
+	background: var(--brand-color);
+	perspective: 900px;
+}
+
+.header__logo {
+	width: 50px;
+}
+
+.header__logo-barnd {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+
+.header__logo-text {
+	display: block;
+	margin-bottom: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	font-size: 12px;
+	text-shadow: 0 1px 0 #000;
+}
+
+.header__logo-text--1 {
+	color: #fff;
+}
+
+.header__logo-text--2 {
+	color: #41b883;
+}
+
+.header__logo-pic  {
+	width: 50px;
+	height: 50px;
+}
+
+.menu__desc {
+	position: absolute;
+	top: 100%;
+}

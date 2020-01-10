@@ -1,0 +1,16 @@
+@mixin icon($name) {
+	background-image: url('../images/icons/#{$name}');
+}
+
+[class^="icon"] {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-css {@include icon('icon-css.svg');}
+.icon-vue {@include icon('icon-vue.svg');}
+
