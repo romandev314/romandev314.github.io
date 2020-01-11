@@ -1,48 +1,70 @@
 <template>
-	<nav class="menu">
+	<nav class="menu" :class="{ 'menu--active': $store.state.open }">
+		<div class="menu__overlay" @click="isActiveClass()"></div>
+
 		<div class="menu__open-wrap">
-			<button class="menu__open-btn" type="button">
-				<span class="menu__open-line"></span>
-				<span class="menu__open-line"></span>
-				<span class="menu__open-line"></span>
+			<button
+				class="menu__open-btn"
+				type="button"
+				@click="isActiveClass()"
+			>
+				<span class="menu__open-line" v-for="item in 3"></span>
 			</button>
 		</div>
 
-		<div class="menu__desc">
-			<div class="drop-menu">
-				<div class="menu-desc">
-					<div class="menu-desc__avatar">
-						<div class="user">
-
-							<img class="menu__avatar"
+		<div class="menu__drop-wrap">
+			<div class="menu__drop">
+				<div class="menu__desc">
+					<div class="menu__avatar-wrap">
+						<div class="menu__avatar">
+							<img class="menu__avatar-pic"
 								 src="../../assets/images/pic/roman-yurchenko.jpg"
 								 alt="Roman Yurchenko">
 
-							<div class="name">
+							<h3 class="menu__name">
 								Roman Yurchenko
-							</div>
+							</h3>
 						</div>
 					</div>
 
-					<div class="menu-desc__nav">
-						<nav class="nav-main">
-							<ul class="nav-main__list">
-								<li class="nav-main__item">
-									<router-link class="nav-main__link" to="/">Мои работы</router-link>
-								</li>
-
-								<li class="nav-main__item">
-									<router-link class="nav-main__link" to="/about">Обо мне</router-link>
-								</li>
-
-								<li class="nav-main__item">
-									<router-link class="nav-main__link" to="/contacts">Контакты</router-link>
-								</li>
-							</ul>
-						</nav>
-					</div>
+					<ul class="menu__list">
+						<li class="menu__list-item" v-for="item in list">
+							<router-link class="menu__list-link" :to="item.link">
+								{{ item.title }}
+							</router-link>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</nav>
 </template>
+
+<script>
+	export default {
+		data() {
+			return {
+				isActive: false,
+				list: [
+					{
+					  title: 'Мои работы',
+					  link: '/',
+					},
+					{
+						title: 'Обо мне',
+						link: '/about',
+					},
+					{
+						title: 'Контакты',
+						link: '/contacts',
+					},
+				]
+			}
+		},
+		methods: {
+		  isActiveClass() {
+			  return this.$store.state.open = !this.$store.state.open;
+		  }
+		}
+	}
+</script>
