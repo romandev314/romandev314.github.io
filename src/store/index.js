@@ -4,13 +4,14 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-  	open: false,
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+	state: {
+		open: false,
+	},
+	mutations: {
+		toggleOpen(state) {
+			state.open = !state.open;
+		}
+	},
+	actions: {},
+	modules: {}
 })

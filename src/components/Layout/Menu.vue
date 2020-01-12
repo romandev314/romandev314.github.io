@@ -1,6 +1,9 @@
 <template>
 	<nav class="menu" :class="{ 'menu--active': $store.state.open }">
-		<div class="menu__overlay" @click="isActiveClass()"></div>
+		<div class="menu__overlay"
+			 @click="isActiveClass()"
+			 v-if="$store.state.open">
+		</div>
 
 		<div class="menu__open-wrap">
 			<button
@@ -63,7 +66,7 @@
 		},
 		methods: {
 		  isActiveClass() {
-			  return this.$store.state.open = !this.$store.state.open;
+			  this.$store.commit('toggleOpen');
 		  }
 		}
 	}

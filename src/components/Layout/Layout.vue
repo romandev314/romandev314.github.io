@@ -1,28 +1,37 @@
 <template>
-  <div class="layout">
-    <Header></Header>
+	<div class="layout">
+		<Header></Header>
 
-    <main>
-      <aside>aside</aside>
+		<slot name="screen"></slot>
 
-      <slot></slot>
-    </main>
+		<main class="layout__main">
+			<aside class="layout__aside">
+				<slot name="aside"></slot>
+			</aside>
 
-    <footer>footer</footer>
-  </div>
+			<section class="layout__content">
+				<TopPanel></TopPanel>
+				<slot name="content"></slot>
+			</section>
+		</main>
+
+		<Footer></Footer>
+	</div>
 </template>
 
 <script>
-  import Header from './Header'
+	import Header from './Header'
+	import Footer from './Footer'
+	import TopPanel from './TopPanel'
 
-  export default {
-    components: {
-      Header: Header,
-    },
-    data() {
-      return {
-
-      }
-    }
-  }
+	export default {
+		components: {
+			Header,
+			TopPanel,
+			Footer,
+		},
+		data() {
+			return {}
+		}
+	}
 </script>
