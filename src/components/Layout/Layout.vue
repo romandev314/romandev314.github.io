@@ -10,7 +10,7 @@
 			</aside>
 
 			<section class="layout__content">
-				<TopPanel></TopPanel>
+				<slot name="panel"></slot>
 				<slot name="content"></slot>
 			</section>
 		</main>
@@ -22,12 +22,11 @@
 <script>
 	import Header from './Header'
 	import Footer from './Footer'
-	import TopPanel from './TopPanel'
+
 
 	export default {
 		components: {
 			Header,
-			TopPanel,
 			Footer,
 		},
 		data() {

@@ -1,11 +1,11 @@
 <template>
 	<div class="top-panel">
 		<div class="top-panel__desc">
-			<a class="top-panel__btn">
+			<router-link class="top-panel__btn" :to="{hash: hash}">
 				<strong class="top-panel__btn-text">
-					Мои работы
+					{{ title }}
 				</strong>
-			</a>
+			</router-link>
 		</div>
 	</div>
 </template>
@@ -13,6 +13,10 @@
 
 <script>
 	export default {
+		props: {
+		  	title: String,
+			hash: String,
+		},
 		data() {
 			return {}
 		}
