@@ -1,0 +1,43 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 30px;
+	background: var(--light-bg);
+}
+
+.home__headline {
+	margin-bottom: 30px;
+}
+
+.home__title {
+	position: relative;
+	padding-bottom: 16px;
+	font-size: 40px;
+	color: #000;
+	font-weight: 600;
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 3px;
+		width: 100%;
+		background-color: var(--brand-color);
+	}
+}
+
+.home__menu {
+	display: flex;
+	margin-bottom: 16px;
+}
+
+.home__tab-btn {
+	padding: 10px;
+	border: 1px solid var(--brand-color);
+
+	&:not(:last-child) {
+		margin-right: 8px;
+	}
+}
