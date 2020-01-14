@@ -1,0 +1,48 @@
+.edit-content {
+	height: 100%;
+	background-image: url('../images/bg/edit-content.jpg');
+	background-size: cover;
+	background-position: 50%;
+}
+
+.banner-editcont {
+	padding: 30px 20px;
+	background-color: rgba(38, 50, 56, 0.95);
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	outline: none;
+	font-family: 'Consolas', sans-serif;
+}
+
+.editcont-list {
+	padding-left: 20px;
+}
+
+.editcont-list {
+	list-style-type: decimal;
+	color: rgb(83, 127, 126);
+}
+
+.editcont-list__item {
+	margin-bottom: 10px;
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.editcont-pre {
+	color: rgba(255, 83, 112, 1);
+}
+
+.editcont-pre__fff {
+	color: var(--light-color);
+}
+
+.editcont-pre__attr {
+	color: #0ccc0c
+}
+
+.editcont-pre__attr-desc {
+	color: #dada00;
+}
