@@ -22,18 +22,29 @@
 
 				<section class="home__desc">
 					<div class="home__menu">
-						<button class="home__tab-btn" type="button">Работы</button>
-						<button class="home__tab-btn" type="button">Javascript</button>
-						<button class="home__tab-btn" type="button">Ссылки</button>
+						<button
+							class="button  home__menu-btn"
+							v-for="nav in navigation"
+							:key="nav.id"
+							v-on:click="{ selected = nav.id }"
+							:class="{ 'active': selected == nav.id }"
+						>
+							{{ nav.name }}
+						</button>
 					</div>
 
-					<div class="home__item">
+					<div class="home__item" v-if="selected == 1">
 						<WorksGalery></WorksGalery>
 					</div>
 
-					<div class="home__item"></div>
+					<div class="home__item" v-if="selected == 2">
+						<iframe height="265" style="width: 100%;" scrolling="no" title="Simple Vue JS Tab" src="https://codepen.io/romajs117/embed/ZEYRXXm?height=265&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+							See the Pen <a href='https://codepen.io/romajs117/pen/ZEYRXXm'>Simple Vue JS Tab</a> by Roman
+							(<a href='https://codepen.io/romajs117'>@romajs117</a>) on <a href='https://codepen.io'>CodePen</a>.
+						</iframe>
+					</div>
 
-					<div class="home__item"></div>
+					<div class="home__item" v-if="selected == 3"></div>
 				</section>
 			</section>
 		</template>
@@ -46,6 +57,7 @@
 	import MainScreen from './MainScreen'
 	import PixelsSect from './PixelsSect'
 	import WorksGalery from './WorksGalery'
+	import Button from '../../components/Common/Button'
 
 	export default {
 		components: {
@@ -54,9 +66,17 @@
 			TopPanel,
 			PixelsSect,
 			WorksGalery,
+			Button,
 		},
 		data() {
-			return {}
+			return {
+				selected: '1',
+				navigation: [
+					{name: 'Работы', id: '1',},
+					{name: 'Javascript', id: '2',},
+					{name: 'Ссылки', id: '3',},
+				],
+			}
 		}
 	}
 </script>

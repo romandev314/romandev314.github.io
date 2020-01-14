@@ -41,3 +41,9 @@
 		margin-right: 8px;
 	}
 }
+
+.home__menu-btn {
+	&:not(:last-child) {
+		margin-right: 8px;
+	}
+}

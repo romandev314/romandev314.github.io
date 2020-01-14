@@ -11,7 +11,10 @@
 
 			<section class="layout__content">
 				<slot name="panel"></slot>
-				<slot name="content"></slot>
+
+				<section class="layout__content-wrap">
+					<slot name="content"></slot>
+				</section>
 			</section>
 		</main>
 

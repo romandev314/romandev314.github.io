@@ -1,13 +1,13 @@
 <template>
-	<div class="top-panel">
+	<header class="top-panel">
 		<div class="top-panel__desc">
-			<router-link class="top-panel__btn" :to="{hash: hash}">
+			<router-link class="button" :to="{hash: hash}">
 				<strong class="top-panel__btn-text">
 					{{ title }}
 				</strong>
 			</router-link>
 		</div>
-	</div>
+	</header>
 </template>
 
 
