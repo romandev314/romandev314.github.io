@@ -32,7 +32,10 @@
 
 					<ul class="menu__list">
 						<li class="menu__list-item" v-for="item in list">
-							<router-link class="menu__list-link" :to="item.link">
+							<router-link class="menu__list-link"
+										 :to="item.link"
+										 @click.native="isActiveClass()"
+							>
 								{{ item.title }}
 							</router-link>
 						</li>
@@ -47,7 +50,6 @@
 	export default {
 		data() {
 			return {
-				isActive: false,
 				list: [
 					{
 					  title: 'Мои работы',

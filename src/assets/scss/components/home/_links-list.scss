@@ -1,0 +1,40 @@
+.links-list__item:not(:last-child) {
+	margin-bottom: 32px;
+}
+
+.links-list__title {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+	font-size: 24px;
+	color: #000;
+	font-weight: 600;
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 3px;
+		width: 100%;
+		background-color: var(--brand-color);
+	}
+}
+
+.links-list__title-icon {
+	width: 32px;
+	height: 32px;
+	margin-right: 16px;
+}
+
+.links-list__list-item:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.links-list__link {
+	text-decoration: underline;
+	color: #0000ee;
+	font-size: 16px;
+}

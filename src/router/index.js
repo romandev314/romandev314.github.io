@@ -20,6 +20,11 @@ const routes = [
 		name: 'contacts',
 		component: () => import(/* webpackChunkName: "contacts" */ '../views/Contacts.vue')
 	},
+	{
+		path: '/custom-reset',
+		name: 'contacts',
+		component: () => import(/* webpackChunkName: "contacts" */ '../components/CustomReset/CustomReset.vue')
+	},
 ]
 
 const router = new VueRouter({
