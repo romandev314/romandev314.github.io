@@ -46,3 +46,16 @@
 .editcont-pre__attr-desc {
 	color: #dada00;
 }
+
+.editcont-pre__fff--rotate {
+	position: absolute;
+	animation: rotate 2.5s linear infinite;
+}
+
+@keyframes rotate {
+	0%{transform: rotate(-45deg)}
+	25%{transform: rotate(0turn)}
+	50%{transform: rotate(45deg)}
+	75%{transform: rotate(0turn)}
+	100%{transform: rotate(-45deg)}
+}

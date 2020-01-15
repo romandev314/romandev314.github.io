@@ -4,7 +4,7 @@
 			<div class="banner-editcont__item">
 				<ol class="editcont-list">
 					<li class="editcont-list__item">
-						<pre class="editcont-pre"><code class="editcont-pre__fff">&lt;</code><code class="editcont-pre__fff">!</code><code class="editcont-pre__tag">DOCTYPE</code> <code class="editcont-pre__fff">html></code></pre>
+						<pre class="editcont-pre"><code class="editcont-pre__fff">&lt;</code><code class="editcont-pre__fff">!</code><code class="editcont-pre__tag">DOCTYPE</code> <code class="editcont-pre__fff  editcont-pre__fff--rotate">html</code><code class="editcont-pre__fff">    ></code></pre>
 					</li>
 
 					<li class="editcont-list__item">
@@ -20,7 +20,7 @@
 					</li>
 
 					<li class="editcont-list__item">
-						<pre class="editcont-pre">    <code class="editcont-pre__fff">&lt;</code><code class="editcont-pre__tag">title</code><code class="editcont-pre__fff">></code><code class="editcont-pre__fff"> yurch-html </code><code class="editcont-pre__fff">&lt;</code><code class="editcont-pre__fff">/</code><code class="editcont-pre__tag">title</code><code class="editcont-pre__fff">></code></pre>
+						<pre class="editcont-pre">    <code class="editcont-pre__fff">&lt;</code><code class="editcont-pre__tag">title</code><code class="editcont-pre__fff">></code><code class="editcont-pre__fff"> romandev314 </code><code class="editcont-pre__fff">&lt;</code><code class="editcont-pre__fff">/</code><code class="editcont-pre__tag">title</code><code class="editcont-pre__fff">></code></pre>
 					</li>
 
 					<li class="editcont-list__item">

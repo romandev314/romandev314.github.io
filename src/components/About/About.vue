@@ -12,7 +12,7 @@
 			<section class="about" id="about">
 				<header class="about__headline">
 					<h2 class="about__title">
-						Мои работы
+						Обо мне
 					</h2>
 				</header>
 

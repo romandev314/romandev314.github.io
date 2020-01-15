@@ -55,7 +55,7 @@
 						],
 					},
 					{
-						title: 'Обзор портфолио на youtube на канале webDev',
+						title: 'Обзор портфолио на youtube канале webDev',
 						icon: 'icon-youtube',
 						links: [
 							{

@@ -24,9 +24,9 @@
 	}
 
 	.menu__drop {
-		transform: rotateX(0deg);
-		opacity: 1;
-		visibility: visible;
+		//transform: rotateX(0deg);
+		//opacity: 1;
+		//visibility: visible;
 	}
 }
 
@@ -113,14 +113,14 @@
 }
 
 .menu__drop {
-	min-height: calc( 100vh - 70px);
+	min-height: calc(100vh - 70px);
 	display: flex;
 	padding: 58px;
 	background: rgba(0, 0, 0, .8);
-	opacity: 0;
-	transform: rotateX(-100deg);
-	transform-origin: 100% 0;
-	transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+	//opacity: 0;
+	//transform: rotateX(-100deg);
+	//transform-origin: 100% 0;
+	//transition: transform .5s ease-in-out, opacity .5s ease-in-out;
 }
 
 .menu__desc {
